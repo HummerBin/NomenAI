@@ -1,0 +1,40 @@
+ ###
+GET http://127.0.0.1:8000/mail/test?email=330965340@qq.com
+
+###
+GET http://127.0.0.1:8000/auth/code?email=330965340@qq.com
+
+###
+#注册功能测试
+POST http://127.0.0.1:8000/auth/register
+Content-Type: application/json
+
+{
+"email":"aa@qq.com",
+"username":"ushgd",
+"password":"111111",
+"confirm_password":"111111",
+"code":"3470"
+}
+
+###
+#登陆
+POST http://127.0.0.1:8000/auth/login
+Content-Type: application/json
+
+{
+    "email":"aa@qq.com",
+    "password":"111111"
+}
+
+###
+POST http://127.0.0.1:8000/name
+Content-Type: application/json
+
+{
+    "surname":"张",
+    "length":"两字",
+    "gender":"女",
+    "other":"要尽量大气一点",
+    "exclude":["张田"]
+}

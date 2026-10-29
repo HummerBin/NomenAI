@@ -1,0 +1,19 @@
+# python 虚拟环境
+venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 数据库文件
+*.db
+*.sqlite3
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
